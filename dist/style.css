@@ -1191,6 +1191,18 @@ video {
     margin-right: 14rem;
   }
 
+  .lg\:min-h-80 {
+    min-height: 20rem;
+  }
+
+  .lg\:min-w-80 {
+    min-width: 20rem;
+  }
+
+  .lg\:min-w-48 {
+    min-width: 12rem;
+  }
+
   .lg\:grid-cols-8 {
     grid-template-columns: repeat(8, minmax(0, 1fr));
   }
@@ -1201,5 +1213,19 @@ video {
 
   .lg\:p-14 {
     padding: 3.5rem;
+  }
+}
+
+@media (min-width: 1280px) {
+  .xl\:mx-80 {
+    margin-left: 20rem;
+    margin-right: 20rem;
+  }
+}
+
+@media (min-width: 1536px) {
+  .\32xl\:mx-80 {
+    margin-left: 20rem;
+    margin-right: 20rem;
   }
 }
