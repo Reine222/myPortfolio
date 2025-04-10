@@ -16,8 +16,9 @@
                 </div>
     
                 <div class="">
-                    <span><i class="fa-solid fa-bars"></i></span>
+                    <button id="openBtn"><span><i class="fa-solid fa-bars"></i></span></button>
                 </div>
+
             </div>
     
             <div class="hidden sm:flex justify-between items-center">
@@ -37,6 +38,18 @@
             </div>
         </div>
         
+        <!-- Sidebar -->
+        <div id="sidebar" class="hidden">
+            <button id="closeBtn" class="top-2 m-2 right-2 text-[#4B5563] text-3xl">&times;</button>
+            <ul class="flex flex-col gap-4 text-lg text-[#4B5563] items-center">
+                <li><a href="#">About</a></li>
+                <li><a href="#">Work</a></li>
+                <li><a href="#">Testimonials</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><span>Lorem</span></li>
+                <li class="p-2 my-2 border rounded-xl bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-violet-500 hover:bg-transparent"><a href="#"><button>Download CV</button></a></li>
+            </ul>
+        </div>
 
     </header>
 
@@ -63,7 +76,7 @@
             </div>
         </section>
         <section class="mt-20 pb-20 bg-gray-50">
-            <div class="mx-4 lg:mx-54 2xl:mx-80 pt-10">
+            <div class="mx-4 md:mx-10 lg:mx-54 2xl:mx-80 pt-10">
                 <p class="text-center my-10"><span class="bg-gray-200 p-2 border rounded-xl bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-violet-500">About</span></p>
                 <div class="flex flex-col items-center gap-10 sm:flex sm:flex-row sm:items-start">
                     <div class="basis-2/4">
