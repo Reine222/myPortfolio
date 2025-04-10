@@ -27,12 +27,13 @@
                 </div>
                 <div>
                     <ul class="flex flex-row gap-4 text-lg text-[#4B5563] items-center">
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Work</a></li>
-                        <li><a href="#">Testimonials</a></li>
-                        <li><a href="#">Contact</a></li>
-                        <li><span>Lorem</span></li>
-                        <li class="p-2 my-2 border rounded-xl bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-violet-500 hover:bg-transparent"><a href="#"><button>Download CV</button></a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#experiences">Experiences</a></li>
+                        <li><a href="#work">Work</a></li>
+                        <!-- <li><a href="#testimonials">Testimonials</a></li>-->
+                        <li><a href="#contact">Contact</a></li>
+                        <li class="p-2 my-2 border rounded-xl bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-violet-500 hover:bg-transparent"><button onclick="telechargerPDF()">Download CV</button></li>
                     </ul>
                 </div>
             </div>
@@ -42,11 +43,12 @@
         <div id="sidebar" class="hidden">
             <button id="closeBtn" class="top-2 m-2 right-2 text-[#4B5563] text-3xl">&times;</button>
             <ul class="flex flex-col gap-4 text-lg text-[#4B5563] items-center">
-                <li><a href="#">About</a></li>
-                <li><a href="#">Work</a></li>
-                <li><a href="#">Testimonials</a></li>
-                <li><a href="#">Contact</a></li>
-                <li><span>Lorem</span></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#experiences">Experiences</a></li>
+                <li><a href="#work">Work</a></li>
+                <!-- <li><a href="#testimonials">Testimonials</a></li>-->
+                <li><a href="#contact">Contact</a></li>
                 <li class="p-2 my-2 border rounded-xl bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-violet-500 hover:bg-transparent"><a href="#"><button>Download CV</button></a></li>
             </ul>
         </div>
@@ -75,7 +77,7 @@
                 </div>
             </div>
         </section>
-        <section class="mt-20 pb-20 bg-gray-50">
+        <section id="about" class="mt-20 pb-20 bg-gray-50">
             <div class="mx-4 md:mx-10 lg:mx-54 2xl:mx-80 pt-10">
                 <p class="text-center my-10"><span class="bg-gray-200 p-2 border rounded-xl bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-violet-500">About</span></p>
                 <div class="flex flex-col items-center gap-10 sm:flex sm:flex-row sm:items-start">
@@ -95,7 +97,7 @@
             
         </section>
 
-        <section class="mt-20">
+        <section id="skills" class="mt-20">
             <div class="mx-4 lg:mx-54 2xl:mx-80">
                 <p class="text-center my-10"><span class="bg-gray-200 p-2 border rounded-xl bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-violet-500">Skills</span></p>
                 <p class="text-center text-lg text-[#4B5563]">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto, temporibus.</p>
@@ -170,7 +172,7 @@
             
         </section>
 
-        <section class="mt-20 pb-20 bg-gray-50">
+        <section id="experiences" class="mt-20 pb-20 bg-gray-50">
             <div class="mx-4 lg:mx-54 2xl:mx-80 pt-10">
                 <p class="text-center my-10"><span class="bg-gray-200 p-2 border rounded-xl bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-violet-500">Experience</span></p>
                 <p class="text-center text-lg text-[#4B5563]">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto, temporibus.</p>
@@ -227,7 +229,7 @@
             
         </section>
 
-        <section class="mt-20">
+        <section id="work" class="mt-20">
             <div class="mx-4 lg:mx-54 2xl:mx-80">
                 <p class="text-center my-10"><span class="bg-gray-200 p-2 border rounded-xl bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-violet-500">Work</span></p>
                 <p class="text-center text-lg text-[#4B5563]">Some of the noteworthy projects I have built:</p>
@@ -284,7 +286,7 @@
             
         </section>
 
-        <section class="mt-20 pb-20 bg-gray-50">
+        <section id="testimonials" class="mt-20 pb-20 bg-gray-50">
             <div class="mx-4 lg:mx-54 2xl:mx-80 pt-10">
                 <p class="text-center my-10"><span class="bg-gray-200 p-2 border rounded-xl bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-violet-500">Testimonials</span></p>
                 <p class="text-center text-lg text-[#4B5563]">Nice things people have said about me:</p>
@@ -317,7 +319,7 @@
             
         </section>
 
-        <section class="mt-20">
+        <section id="contact" class="mt-20">
             <div class="mx-4 lg:mx-54 2xl:mx-80">
                 <p class="text-center my-10"><span class="bg-gray-200 p-2 border rounded-xl bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-violet-500">Get in touch</span></p>
                 <p class="text-center text-lg text-[#4B5563]">What’s next? Feel free to reach out to me if you are looking for a developer, have a query, or simply want to connect.:</p>

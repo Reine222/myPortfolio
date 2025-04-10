@@ -24,3 +24,14 @@ openBtn.addEventListener('click', () => {
 closeBtn.addEventListener('click', () => {
     sidebar.classList.add("hidden"); // Ajoute la classe "active"
 });
+
+
+
+// telecharger le CV  -->
+
+function telechargerPDF() {
+    const lien = document.createElement("a");
+    lien.href = "./src/images/cv_reine.pdf"; // Chemin vers ton fichier PDF
+    lien.download = "cv-reine.pdf"; // Nom du fichier lors du téléchargement
+    lien.click();
+  }
