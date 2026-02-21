@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -27,13 +27,30 @@
                 </div>
                 <div>
                     <ul class="flex flex-row gap-4 text-lg text-[#4B5563] items-center">
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#skills">Skills</a></li>
-                        <li><a href="#experiences">Experiences</a></li>
-                        <li><a href="#work">Work</a></li>
+                        <li><a href="#about" data-key="nav_about">About</a></li>
+                        <li><a href="#skills" data-key="nav_skills">Skills</a></li>
+                        <li><a href="#experiences" data-key="nav_exp">Experiences</a></li>
+                        <li><a href="#work" data-key="nav_work">Work</a></li>
                         <!-- <li><a href="#testimonials">Testimonials</a></li>-->
-                        <li><a href="#contact">Contact</a></li>
-                        <li class="p-2 my-2 border rounded-xl bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-violet-500 hover:bg-transparent"><button onclick="telechargerPDF()">Download CV</button></li>
+                        <li><a href="#contact" data-key="nav_contact">Contact</a></li>
+                        <li class="relative inline-block text-left">
+                            <button id="lang-menu-btn" class="flex items-center gap-1 focus:outline-none font-medium">
+                                <span data-key="nav_lang">🇫🇷</span>
+                                <svg class="w-4 h-4 transition-transform duration-200" id="arrow-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                                </svg>
+                            </button>
+
+                            <div id="lang-dropdown" class="hidden absolute right-0 mt-2 w-24 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none z-50">
+                                <div class="py-1">
+                                    <button onclick="changeLanguage('fr')" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 w-full text-left">Français</button>
+                                    <button onclick="changeLanguage('en')" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 w-full text-left">English</button>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="p-2 my-2 border rounded-xl bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-violet-500 hover:bg-transparent">
+                            <button onclick="telechargerPDF()" data-key="nav_cv">Download CV</button>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -43,13 +60,30 @@
         <div id="sidebar" class="hidden">
             <button id="closeBtn" class="top-2 m-2 right-2 text-[#4B5563] text-3xl">&times;</button>
             <ul class="flex flex-col gap-4 text-lg text-[#4B5563] items-center">
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#experiences">Experiences</a></li>
-                <li><a href="#work">Work</a></li>
+                <li><a href="#about" data-key="nav_about">About</a></li>
+                <li><a href="#skills" data-key="nav_skills">Skills</a></li>
+                <li><a href="#experiences" data-key="nav_exp">Experiences</a></li>
+                <li><a href="#work" data-key="nav_work">Work</a></li>
                 <!-- <li><a href="#testimonials">Testimonials</a></li>-->
-                <li><a href="#contact">Contact</a></li>
-                <li class="p-2 my-2 border rounded-xl bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-violet-500 hover:bg-transparent"><a href="#"><button>Download CV</button></a></li>
+                <li class="relative inline-block text-left">
+                    <button id="lang-menu-btn2" class="flex items-center gap-1 focus:outline-none font-medium">
+                        <span data-key="nav_lang">🇫🇷</span>
+                        <svg class="w-4 h-4 transition-transform duration-200" id="arrow-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </button>
+
+                    <div id="lang-dropdown2" class="hidden absolute right-0 mt-2 w-24 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none z-50">
+                        <div class="py-1">
+                            <button onclick="changeLanguage('fr')" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 w-full text-left">Français</button>
+                            <button onclick="changeLanguage('en')" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 w-full text-left">English</button>
+                        </div>
+                    </div>
+                </li>
+                <li><a href="#contact" data-key="nav_contact">Contact</a></li>
+                <li class="p-2 my-2 border rounded-xl bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-violet-500 hover:bg-transparent"><a href="#">
+                    <button data-key="nav_cv">Download CV</button>
+                </a></li>
             </ul>
         </div>
 
@@ -343,6 +377,7 @@
     </footer>
 
     <script src="./src/script.js"></script>
+    <script src="./src/translations.js"></script>
 
 </body>
 </html>
