@@ -27,10 +27,10 @@
                 </div>
                 <div>
                     <ul class="flex flex-row gap-4 text-lg text-[#4B5563] items-center">
-                        <li><a href="#about" data-key="nav_about">About</a></li>
-                        <li><a href="#skills" data-key="nav_skills">Skills</a></li>
-                        <li><a href="#experiences" data-key="nav_exp">Experiences</a></li>
-                        <li><a href="#work" data-key="nav_work">Work</a></li>
+                        <li><a href="#about" data-key="nav_about">À propos</a></li>
+                        <li><a href="#skills" data-key="nav_skills">Compétences</a></li>
+                        <li><a href="#experiences" data-key="nav_exp">Expériences</a></li>
+                        <li><a href="#work" data-key="nav_work">Projets</a></li>
                         <!-- <li><a href="#testimonials">Testimonials</a></li>-->
                         <li><a href="#contact" data-key="nav_contact">Contact</a></li>
                         <li class="relative inline-block text-left">
@@ -49,7 +49,7 @@
                             </div>
                         </li>
                         <li class="p-2 my-2 border rounded-xl bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-violet-500 hover:bg-transparent">
-                            <button onclick="telechargerPDF()" data-key="nav_cv">Download CV</button>
+                            <button onclick="telechargerPDF()" data-key="nav_cv">Télécharger CV</button>
                         </li>
                     </ul>
                 </div>
@@ -60,10 +60,10 @@
         <div id="sidebar" class="hidden">
             <button id="closeBtn" class="top-2 m-2 right-2 text-[#4B5563] text-3xl">&times;</button>
             <ul class="flex flex-col gap-4 text-lg text-[#4B5563] items-center">
-                <li><a href="#about" data-key="nav_about">About</a></li>
-                <li><a href="#skills" data-key="nav_skills">Skills</a></li>
-                <li><a href="#experiences" data-key="nav_exp">Experiences</a></li>
-                <li><a href="#work" data-key="nav_work">Work</a></li>
+                <li><a href="#about" data-key="nav_about">À propos</a></li>
+                <li><a href="#skills" data-key="nav_skills">Compétences</a></li>
+                <li><a href="#experiences" data-key="nav_exp">Expériences</a></li>
+                <li><a href="#work" data-key="nav_work">Projets</a></li>
                 <!-- <li><a href="#testimonials">Testimonials</a></li>-->
                 <li class="relative inline-block text-left">
                     <button id="lang-menu-btn2" class="flex items-center gap-1 focus:outline-none font-medium">
@@ -82,7 +82,7 @@
                 </li>
                 <li><a href="#contact" data-key="nav_contact">Contact</a></li>
                 <li class="p-2 my-2 border rounded-xl bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-violet-500 hover:bg-transparent"><a href="#">
-                    <button data-key="nav_cv">Download CV</button>
+                    <button data-key="nav_cv">Télécharger CV</button>
                 </a></li>
             </ul>
         </div>
@@ -93,10 +93,16 @@
         <section class="mt-20 sm:mt-36 mx-4 lg:mx-54 2xl:mx-80">
             <div class="flex flex-col-reverse items-center gap-10 sm:flex sm:flex-row sm:items-start">
                 <div class="basis-3/5">
-                    <h1 class="mb-5 text-5xl font-bold font-sans">Salut, Je suis Reine 👋</h1>
-                    <p class="text-lg text-[#4B5563]">Je suis <span class="font-bold">développeuse full stack</span> passionnée, j'aime explorer de nouvelles technologies et repousser mes limites. Je conçois des applications web modernes et je me lance également dans le développement mobile. Curieuse et motivée, je suis toujours à la recherche de nouveaux défis pour continuer à évoluer.</p>
+                    <h1 class="mb-5 text-5xl font-bold font-sans" data-key="nav_salut">Salut, Je suis Reine 👋</h1>
+                    <p class="text-lg text-[#4B5563]">
+                        <span class="font-bold" data-key="nav_specialite">Développeuse full stack</span> 
+                        <span data-key="nav_jesuis">
+                            passionnée, j'aime explorer de nouvelles technologies et repousser mes limites. Je conçois des applications web modernes et je me lance également dans le développement mobile. Curieuse et motivée, je suis toujours à la recherche de nouveaux défis pour continuer à évoluer.
+                        </span>
+                        
+                    </p>
 
-                    <p class="mt-5 mb-2 text-lg"><span><i class="fa-solid fa-location-dot"></i></span> Abidjan, Côte d'Ivoire</p>
+                    <p class="mt-5 mb-2 text-lg"><span><i class="fa-solid fa-location-dot"></i></span> <span data-key="nav_lieu">Abidjan, Côte d'Ivoire</span></p>
 
                     <div class="flex flex-row gap-5 mt-5">
                         <p><a href="#"><span><i class="fa-brands fa-github text-3xl"></i></span></a></p>
@@ -113,17 +119,23 @@
         </section>
         <section id="about" class="mt-20 pb-20 bg-gray-50">
             <div class="mx-4 md:mx-10 lg:mx-54 2xl:mx-80 pt-10">
-                <p class="text-center my-10"><span class="bg-gray-200 p-2 border rounded-xl bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-violet-500">Sur Moi</span></p>
+                <p class="text-center my-10"><span class="bg-gray-200 p-2 border rounded-xl bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-violet-500" data-key="nav_me">Sur Moi</span></p>
                 <div class="flex flex-col items-center gap-10 sm:flex sm:flex-row sm:items-start">
                     <div class="basis-2/4">
                         <img class="max-w-60 rounded-xl sm:min-w-96 sm:min-h-80" src="src/images/illustre.jpeg" alt="photo2">
                     </div>
                     <div class="basis-2/4">
-                        <h2 class="mb-10 text-3xl font-bold font-sans">À propos de moi :</h2>
-                        <p class="text-[#4B5563] leading-relaxed mb-2">Développeuse full stack passionnée, je construis des applications web et mobiles en alliant créativité et rigueur technique. J'ai commencé mon parcours dans le développement en 2019, et depuis, je n'ai cessé d'élargir mes compétences.</p>
-                        <p class="text-[#4B5563] leading-relaxed mb-2">Formée en développement front-end (<span class="font-bold">HTML, CSS, JavaScript, Tailwind, Bootstrap</span>) et back-end (<span class="font-bold">PHP/Laravel, Python/Django, Golang, Node.js/Express, SQL</span>), je possède une approche polyvalente du développement.</p>
-                        <p class="text-[#4B5563] leading-relaxed">Au fil des années, j'ai travaillé sur divers projets, de la création de sites e-commerce à la réalisation d'applications complexes, ce qui m'a permis de renforcer mon expertise technique et ma capacité à m'adapter à différents défis.</p>
-                        <p class="text-[#4B5563] leading-relaxed">Curieuse et motivée, j'aime apprendre de nouvelles technologies et sortir de ma zone de confort. Aujourd'hui, je poursuis mon évolution en explorant aussi le développement mobile, toujours animée par la passion de créer des solutions modernes et utiles.</p>
+                        <h2 class="mb-10 text-3xl font-bold font-sans" data-key="nav_aboutt">À propos de moi :</h2>
+                        <p class="text-[#4B5563] leading-relaxed mb-2" data-key="nav_about1">Développeuse full stack passionnée, je construis des applications web et mobiles en alliant créativité et rigueur technique. J'ai commencé mon parcours dans le développement en 2019, et depuis, je n'ai cessé d'élargir mes compétences.</p>
+                        <p class="text-[#4B5563] leading-relaxed mb-2">
+                            <span data-key="nav_about2">Formée en développement front-end (</span>
+                            <span class="font-bold" data-key="nav_about22">HTML, CSS, JavaScript, Tailwind, Bootstrap</span>
+                            <span data-key="nav_about222">) et back-end (</span>
+                            <span class="font-bold" data-key="nav_about2222">PHP/Laravel, Python/Django, Golang, Node.js/Express, SQL</span>
+                            <span data-key="nav_about22222">), je possède une approche polyvalente du développement.</span>
+                        </p>
+                        <p class="text-[#4B5563] leading-relaxed" data-key="nav_about3">Au fil des années, j'ai travaillé sur divers projets, de la création de sites e-commerce à la réalisation d'applications complexes, ce qui m'a permis de renforcer mon expertise technique et ma capacité à m'adapter à différents défis.</p>
+                        <p class="text-[#4B5563] leading-relaxed" data-key="nav_about4">Curieuse et motivée, j'aime apprendre de nouvelles technologies et sortir de ma zone de confort. Aujourd'hui, je poursuis mon évolution en explorant aussi le développement mobile, toujours animée par la passion de créer des solutions modernes et utiles.</p>
 
                     </div>
                 </div>
@@ -133,73 +145,73 @@
 
         <section id="skills" class="mt-20">
             <div class="mx-4 lg:mx-54 2xl:mx-80">
-                <p class="text-center my-10"><span class="bg-gray-200 p-2 border rounded-xl bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-violet-500">Competences</span></p>
-                <p class="text-center text-lg text-[#4B5563]">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto, temporibus.</p>
+                <p class="text-center my-10"><span class="bg-gray-200 p-2 border rounded-xl bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-violet-500" data-key="nav_skill">Competences</span></p>
+                <p class="text-center text-lg text-[#4B5563]" data-key="nav_skills1">Les compétences, outils et technologies dans lesquels je suis vraiment douée.</p>
                 <div class="my-10 grid grid-cols-3 justify-items-center gap-12 sm:grid-cols-6 lg:grid-cols-8">
                     <div class="">
-                        <img class="max-w-16 max-h-16 object-center mx-auto" src="https://cdn.pixabay.com/photo/2015/04/23/17/41/javascript-736400_1280.png" alt="js">
+                        <img class="max-w-16 max-h-16 object-center mx-auto" src="./src/images/html.svg" alt="js">
+                        <p class="text-center mt-2 text-[#4B5563]">HTML5</p>
+                    </div>
+                    <div class="">
+                        <img class="max-w-16 max-h-16 mx-auto" src="./src/images/css-3.svg" alt="js">
+                        <p class="text-center mt-2 text-[#4B5563]">CSS3</p>
+                    </div>
+                    <div class="">
+                        <img class="max-w-16 max-h-16 mx-auto" src="./src/images/icon-javascript.svg" alt="js">
                         <p class="text-center mt-2 text-[#4B5563]">JavaScript</p>
                     </div>
                     <div class="">
-                        <img class="max-w-16 max-h-16 mx-auto" src="https://cdn.pixabay.com/photo/2015/04/23/17/41/javascript-736400_1280.png" alt="js">
-                        <p class="text-center mt-2 text-[#4B5563]">JavaScript</p>
+                        <img class="max-w-16 max-h-16 mx-auto" src="./src/images/icon-typescript.svg" alt="js">
+                        <p class="text-center mt-2 text-[#4B5563]">TypeScript</p>
                     </div>
                     <div class="">
-                        <img class="max-w-16 max-h-16 mx-auto" src="https://cdn.pixabay.com/photo/2015/04/23/17/41/javascript-736400_1280.png" alt="js">
-                        <p class="text-center mt-2 text-[#4B5563]">JavaScript</p>
+                        <img class="max-w-16 max-h-16 mx-auto" src="./src/images/python.svg" alt="js">
+                        <p class="text-center mt-2 text-[#4B5563]">Python</p>
                     </div>
                     <div class="">
-                        <img class="max-w-16 max-h-16 mx-auto" src="https://cdn.pixabay.com/photo/2015/04/23/17/41/javascript-736400_1280.png" alt="js">
-                        <p class="text-center mt-2 text-[#4B5563]">JavaScript</p>
+                        <img class="max-w-16 max-h-16 mx-auto" src="./src/images/php.svg" alt="js">
+                        <p class="text-center mt-2 text-[#4B5563]">PHP</p>
                     </div>
                     <div class="">
-                        <img class="max-w-16 max-h-16 mx-auto" src="https://cdn.pixabay.com/photo/2015/04/23/17/41/javascript-736400_1280.png" alt="js">
-                        <p class="text-center mt-2 text-[#4B5563]">JavaScript</p>
+                        <img class="max-w-16 max-h-16 mx-auto" src="./src/images/icon-react.svg" alt="js">
+                        <p class="text-center mt-2 text-[#4B5563]">React</p>
                     </div>
                     <div class="">
-                        <img class="max-w-16 max-h-16 mx-auto" src="https://cdn.pixabay.com/photo/2015/04/23/17/41/javascript-736400_1280.png" alt="js">
-                        <p class="text-center mt-2 text-[#4B5563]">JavaScript</p>
-                    </div>
-                    <div class="">
-                        <img class="max-w-16 max-h-16 mx-auto" src="https://cdn.pixabay.com/photo/2015/04/23/17/41/javascript-736400_1280.png" alt="js">
-                        <p class="text-center mt-2 text-[#4B5563]">JavaScript</p>
-                    </div>
-                    <div class="">
-                        <img class="max-w-16 max-h-16 mx-auto" src="https://cdn.pixabay.com/photo/2015/04/23/17/41/javascript-736400_1280.png" alt="js">
-                        <p class="text-center mt-2 text-[#4B5563]">JavaScript</p>
+                        <img class="max-w-16 max-h-16 mx-auto" src="./src/images/icon-nodejs.svg" alt="js">
+                        <p class="text-center mt-2 text-[#4B5563]">Node.js</p>
                     </div>
 
                     <div class="">
-                        <img class="max-w-16 max-h-16 mx-auto" src="https://cdn.pixabay.com/photo/2015/04/23/17/41/javascript-736400_1280.png" alt="js">
-                        <p class="text-center mt-2 text-[#4B5563]">JavaScript</p>
+                        <img class="max-w-16 max-h-16 mx-auto" src="./src/images/express.svg" alt="js">
+                        <p class="text-center mt-2 text-[#4B5563]">Express.js</p>
                     </div>
                     <div class="">
-                        <img class="max-w-16 max-h-16 mx-auto" src="https://cdn.pixabay.com/photo/2015/04/23/17/41/javascript-736400_1280.png" alt="js">
-                        <p class="text-center mt-2 text-[#4B5563]">JavaScript</p>
+                        <img class="max-w-16 max-h-16 mx-auto" src="./src/images/icon-nest.svg" alt="js">
+                        <p class="text-center mt-2 text-[#4B5563]">Nest.js</p>
                     </div>
                     <div class="">
-                        <img class="max-w-16 max-h-16 mx-auto" src="https://cdn.pixabay.com/photo/2015/04/23/17/41/javascript-736400_1280.png" alt="js">
-                        <p class="text-center mt-2 text-[#4B5563]">JavaScript</p>
+                        <img class="max-w-16 max-h-16 mx-auto" src="./src/images//django.svg" alt="js">
+                        <p class="text-center mt-2 text-[#4B5563]">Django</p>
                     </div>
                     <div class="">
-                        <img class="max-w-16 max-h-16 mx-auto" src="https://cdn.pixabay.com/photo/2015/04/23/17/41/javascript-736400_1280.png" alt="js">
-                        <p class="text-center mt-2 text-[#4B5563]">JavaScript</p>
+                        <img class="max-w-16 max-h-16 mx-auto" src="./src/images/laravel.svg" alt="js">
+                        <p class="text-center mt-2 text-[#4B5563]">Laravel</p>
                     </div>
                     <div class="">
-                        <img class="max-w-16 max-h-16 mx-auto" src="https://cdn.pixabay.com/photo/2015/04/23/17/41/javascript-736400_1280.png" alt="js">
-                        <p class="text-center mt-2 text-[#4B5563]">JavaScript</p>
+                        <img class="max-w-16 max-h-16 mx-auto" src="./src/images/tailwind.svg" alt="js">
+                        <p class="text-center mt-2 text-[#4B5563]">Tailwindcss</p>
                     </div>
                     <div class="">
-                        <img class="max-w-16 max-h-16 mx-auto" src="https://cdn.pixabay.com/photo/2015/04/23/17/41/javascript-736400_1280.png" alt="js">
-                        <p class="text-center mt-2 text-[#4B5563]">JavaScript</p>
+                        <img class="max-w-16 max-h-16 mx-auto" src="./src/images/icon-git.svg" alt="js">
+                        <p class="text-center mt-2 text-[#4B5563]">Git</p>
                     </div>
                     <div class="">
-                        <img class="max-w-16 max-h-16 mx-auto" src="https://cdn.pixabay.com/photo/2015/04/23/17/41/javascript-736400_1280.png" alt="js">
-                        <p class="text-center mt-2 text-[#4B5563]">JavaScript</p>
+                        <img class="max-w-16 max-h-16 mx-auto" src="./src/images/icon-mongodb.svg" alt="js">
+                        <p class="text-center mt-2 text-[#4B5563]">MongoDB</p>
                     </div>
                     <div class="">
-                        <img class="max-w-16 max-h-16 mx-auto" src="https://cdn.pixabay.com/photo/2015/04/23/17/41/javascript-736400_1280.png" alt="js">
-                        <p class="text-center mt-2 text-[#4B5563]">JavaScript</p>
+                        <img class="max-w-16 max-h-16 mx-auto" src="./src/images/sql.svg" alt="js">
+                        <p class="text-center mt-2 text-[#4B5563]">SQL</p>
                     </div>
                 </div>
             </div>
@@ -208,8 +220,8 @@
 
         <section id="experiences" class="mt-20 pb-20 bg-gray-50">
             <div class="mx-4 lg:mx-54 2xl:mx-80 pt-10">
-                <p class="text-center my-10"><span class="bg-gray-200 p-2 border rounded-xl bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-violet-500">Experiences</span></p>
-                <p class="text-center text-lg text-[#4B5563]">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto, temporibus.</p>
+                <p class="text-center my-10"><span class="bg-gray-200 p-2 border rounded-xl bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-violet-500" data-key="nav_exp">Experiences</span></p>
+                <p class="text-center text-lg text-[#4B5563]" data-key="nav_expDesc">Voici un bref résumé de mes expériences les plus récentes.</p>
 
                 <div class="my-10 sm:mx-10 lg:mx-28 grid grid-cols-1 gap-5">
                     <div class="p-5 bg-white rounded-lg shadow-md">
@@ -265,8 +277,8 @@
 
         <section id="work" class="mt-20">
             <div class="mx-4 lg:mx-54 2xl:mx-80">
-                <p class="text-center my-10"><span class="bg-gray-200 p-2 border rounded-xl bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-violet-500">Projets</span></p>
-                <p class="text-center text-lg text-[#4B5563]">Some of the noteworthy projects I have built:</p>
+                <p class="text-center my-10"><span class="bg-gray-200 p-2 border rounded-xl bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-violet-500" data-key="nav_work">Projets</span></p>
+                <p class="text-center text-lg text-[#4B5563]" data-key="nav_workDesc">Voici quelques-uns des projets notables que j'ai réalisés.</p>
                 <div class="m-5">
                     <div class="flex flex-col sm:flex-row rounded-xl shadow-md mt-10">
                         <div class="basis-2/4 bg-gray-50 p-6 sm:p-4 lg:p-14 rounded-xl">
@@ -322,8 +334,8 @@
 
         <section id="testimonials" class="mt-20 pb-20 bg-gray-50">
             <div class="mx-4 lg:mx-54 2xl:mx-80 pt-10">
-                <p class="text-center my-10"><span class="bg-gray-200 p-2 border rounded-xl bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-violet-500">Témoignages</span></p>
-                <p class="text-center text-lg text-[#4B5563]">Nice things people have said about me:</p>
+                <p class="text-center my-10"><span class="bg-gray-200 p-2 border rounded-xl bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-violet-500" data-key="nav_testy">Témoignages</span></p>
+                <p class="text-center text-lg text-[#4B5563]" data-key="nav_testyDesc">Voici quelques compliments que les gens ont faits à mon sujet.</p>
 
                 <div class="my-10 flex flex-col lg:flex-row gap-5">
                     <div class="border rounded-lg shadow-lg p-10 text-center content-around">
@@ -355,12 +367,12 @@
 
         <section id="contact" class="mt-20">
             <div class="mx-4 lg:mx-54 2xl:mx-80">
-                <p class="text-center my-10"><span class="bg-gray-200 p-2 border rounded-xl bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-violet-500">Me Contacter</span></p>
-                <p class="text-center text-lg text-[#4B5563]">What’s next? Feel free to reach out to me if you are looking for a developer, have a query, or simply want to connect.:</p>
+                <p class="text-center my-10"><span class="bg-gray-200 p-2 border rounded-xl bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-violet-500" data-key="nav_contac">Me Contacter</span></p>
+                <p class="text-center text-lg text-[#4B5563]" data-key="nav_contacDesc">N'hésitez pas à me contacter si vous recherchez un développeur, si vous avez une question ou si vous souhaitez simplement échanger.</p>
 
                 <div class="my-10 text-center">
                     <p class="text-2xl mb-10 text-[#4B5563]"><span><i class="fa-solid fa-envelope"></i></span> koulaireine0222@gmail.com</p>
-                    <p class="text-2xl m-2 text-[#4B5563]"><span><i class="fa-solid fa-phone"></i></span> +225 01 52 03 62 67</p>
+                    <p class="text-2xl m-2 text-[#4B5563]"><span><i class="fa-solid fa-phone"></i></span> +225 07 89 48 54 36</p>
                     <div class="flex flex-row gap-5 mt-10 justify-center">
                         <p><a href="#"><span><i class="fa-brands fa-github text-3xl"></i></span></a></p>
                         <p><a href="#"><span><i class="fa-brands fa-facebook text-3xl"></i></span></a></p>
@@ -373,7 +385,7 @@
     </main>
 
     <footer class="mt-20 py-5 bg-gray-50 text-center">
-        <p class="text-[#4B5563]">2025 | Designed and coded with ❤️️ by  Koulai Reine</p>
+        <p class="text-[#4B5563]">2026 | Designed and coded with ❤️️ by  Koulai Reine</p>
     </footer>
 
     <script src="./src/script.js"></script>
