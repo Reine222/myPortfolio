@@ -32,13 +32,43 @@ const translations = {
         nav_expDesc: "Voici un bref résumé de mes expériences les plus récentes.",
         
         nav_work: "Projets",
-        nav_workDesc: "Voici quelques-uns des projets notables que j'ai réalisés.",
+        nav_workDesc: "Aperçu des principaux projets auxquels j’ai contribué.",
 
         nav_contac: "Me Contacter",
         nav_contacDesc: "N'hésitez pas à me contacter si vous recherchez un développeur, si vous avez une question ou si vous souhaitez simplement échanger.",
 
         nav_testy: "Témoignages",
         nav_testyDesc: "Voici quelques compliments que les gens ont faits à mon sujet.",
+
+        nav_expDate1: "Janvier 2025 – Aujourd'hui",
+        nav_expTitre1: "chargée des formations et du développement digital – ONG Digifemmes Côte d’Ivoire",
+        nav_expP1: "Formation des apprenants en HTML5, CSS3, TailwindCSS, JavaScript, Node.js, Express.js, UI/UX et Kotlin",
+        nav_expP11: "Création d’API RESTful pour des cas pratiques en Node.js",
+        nav_expP111: "Création d’application mobile Android",
+        nav_expP1111: "Accompagnement des apprenants dans leurs projets de fin de formation",
+        nav_expP11111: "Développement de plateforme digitale",
+
+        nav_expDate2: "Novembre 2023 – Janvier 2025",
+        nav_expTitre2: "Développeur Web – Dughu",
+        nav_expP2: "Conception d’un site de petites annonces (vendeurs/clients) avec Laravel",
+        nav_expP22: "Intégration d’un système de notification push Firebase",
+        nav_expP222: "Développement d’un dashboard admin avec système de chat temps réel",
+        nav_expP2222: "Mise en production de l’application sur un serveur",
+
+        nav_expDate3: "Janvier 2019 – Mars 2021",
+        nav_expTitre3: "Développeur Backend – NAN",
+        nav_expP3: "Création du backend d’un site de vérification d’étudiants",
+        nav_expP33: "Développement d’une plateforme de mise en relation enseignant/apprenant",
+        nav_expP333: "Conception d’API pour applications mobiles",
+
+        nav_workEts: "ONG BAFYC",
+        nav_workTitre: "Site bilingue pour une ONG",
+        nav_workTrans: "Traduction(fr/en)",
+        nav_workPay: "Système de paiement en ligne",
+
+        nav_workEts1: "Dealtoo",
+        nav_workTitre1: "Site de petite annonce avec administration",
+        nav_workPay1: "Système de paiement en ligne",
 
     },
     en: {
@@ -74,7 +104,7 @@ const translations = {
         nav_expDesc: "Here is a brief summary of my most recent experiences.",
 
         nav_work: "Work",
-        nav_workDesc: "Here are some of the notable projects I have completed.",
+        nav_workDesc: "Overview of the main projects I have contributed to.",
 
         nav_contac: "Contact Me",
         nav_contacDesc: "Please do not hesitate to contact me if you are looking for a developer, if you have a question, or if you simply wish to discuss something.",
@@ -82,6 +112,36 @@ const translations = {
         nav_testy: "Testimonials",
         nav_testyDesc: "Here are some compliments that people have said about me.",
 
+        nav_expDate1: "January 2025 – Present",
+        nav_expTitre1: "Head of Training and Digital Development – Digifemmes Côte d’Ivoire (NGO)",
+        nav_expP1: "Training learners in HTML5, CSS3, TailwindCSS, JavaScript, Node.js, Express.js, UI/UX, and Kotlin",
+        nav_expP11: "Development of RESTful APIs for practical use cases in Node.js",
+        nav_expP111: "Development of Android mobile applications",
+        nav_expP1111: "Mentoring learners on their final training projects",
+        nav_expP11111: "Development of digital platforms",
+
+        nav_expDate2: "November 2023 – January 2025",
+        nav_expTitre2: "Web Developer – Dughu",
+        nav_expP2: "Design and development of a classified ads website (sellers/clients) using Laravel",
+        nav_expP22: "Integration of Firebase push notification system",
+        nav_expP222: "Development of an admin dashboard with real-time chat system",
+        nav_expP2222: "Deployment of the application on a production server",
+
+        nav_expDate3: "January 2019 – March 2021",
+        nav_expTitre3: "Backend Developer – NAN",
+        nav_expP3: "Backend development of a student verification platform",
+        nav_expP33: "Development of a teacher/learner matching platform",
+        nav_expP333: "API design for mobile applications",
+
+        nav_workEts: "BAFYC NGO",
+        nav_workTitre: "Bilingual website for an NGO",
+        nav_workTrans: "Translation (FR/EN)",
+        nav_workPay: "Online payment system",
+
+        nav_workEts1: "Dealtoo",
+        nav_workTitre1: "Classified ads website with admin panel",
+        nav_workPay1: "Online payment system",
+        
     }
 };
 
